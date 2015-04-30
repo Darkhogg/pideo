@@ -8,7 +8,7 @@ arch=('any')
 license=('GPL3')
 depends=('udevil' 'udisks2' 'subliminal-git')
 source=('pideo')
-md5sums=('86d0955d57dbe2b2751c4227dcfcadc3')
+md5sums=('8edb114a9de906a2b21480d9b7aefecf')
 
 package() {
   install -Dm755 pideo "$pkgdir/usr/bin/pideo"
