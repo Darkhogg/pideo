@@ -111,7 +111,7 @@ pick_subtitle () {
 
 download_subtitle () {
     subliminal -l "$1" -- "$2" &>/dev/null
-    printf "${2##*.}.$1.srt"
+    printf "${2%.*}.$1.srt"
 }
 
 DevName="$(pick_device)"
